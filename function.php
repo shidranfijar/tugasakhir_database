@@ -7,6 +7,7 @@ if (isset($_POST['barangmasuk'])) {
     $barangnya = $_POST['barangnya'];
     $penerima = $_POST['penerima'];
     $qty = $_POST['qty'];
+    
 
     $cekstocksekarang = mysqli_query($koneksi, "SELECT * FROM produk where idbarang='$barangnya'");
     $ambildatanya = mysqli_fetch_assoc($cekstocksekarang);
